@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<h1>Playlist Information</h1>
+<div class="bloque">
+	<p>
+	  <strong>Name:</strong>
+	  <%= @playlist.name %>
+	</p>
+
+	<p>
+	  <strong>Votes:</strong>
+	  <%= @playlist.number_of_votes %>
+	</p>
+
+</div>
+	<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
+	<%= link_to 'Back', playlists_path %>

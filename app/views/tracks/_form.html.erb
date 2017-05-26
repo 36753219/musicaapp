@@ -1,0 +1,10 @@
+<%= semantic_form_for @track do |f| %>
+  <%= f.semantic_errors %>
+  <%= f.inputs do %>
+    <%= f.input :Name,   :hint => "Enter the name of the track", :class =>"input-small" %>
+    <%= f.input :Artist, :hint => "Enter the artist's name" %>
+    <%= f.input :Album, :hint => "Enter the albums's name" %>
+
+  <% end %>
+    <%= f.button :button_html => {:class => "primary"} %>
+  <% end %>

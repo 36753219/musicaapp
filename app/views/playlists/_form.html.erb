@@ -1,0 +1,9 @@
+<%= semantic_form_for @playlist do |f| %>
+  <%= f.semantic_errors %>
+  <%= f.inputs do %>
+    <%= f.input :name,   :hint => "Enter the name of the playlist", :class =>"input-small" %>
+    <%= f.input :number_of_votes, :hint => "Enter the number of votes" %>
+
+  <% end %>
+    <%= f.button :button_html => {:class => "primary"} %>
+  <% end %>

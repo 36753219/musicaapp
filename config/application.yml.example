@@ -1,0 +1,4 @@
+development:
+  SUPER_SECRET_KEY: "LLAVE_PRUEBA"
+  SUPER_SECRET_ID: "ID_FALSO"
+
